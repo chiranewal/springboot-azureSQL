@@ -27,6 +27,10 @@ public class SpringbootAzuresqlApplication {
         return repository.findAll();
     }
 
+    @GetMapping("/hello")
+    public String hello() {
+        return "Hello message from AzueSQL";
+    }
 
     public static void main(String[] args) {
         SpringApplication.run(SpringbootAzuresqlApplication.class, args);
